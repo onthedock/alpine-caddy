@@ -1,0 +1,5 @@
+0.0.0.0
+root /var/www
+gzip
+log stdout
+errors stdout
