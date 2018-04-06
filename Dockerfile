@@ -1,5 +1,5 @@
-FROM alpine:3.6
-RUN apk add --no-cache caddy=0.9.3-r1
+FROM alpine:3.7
+RUN apk add --update-cache caddy=0.10.10-r0
 RUN chown -R caddy:caddy /var/www /var/log
 WORKDIR /var/www
 COPY files/Caddyfile /etc/Caddyfile
